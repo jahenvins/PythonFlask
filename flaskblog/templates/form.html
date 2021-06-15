@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head >
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <title>FILL NOW</title>
+  </head>
+  <body style="background-image: url(https://images.pexels.com/photos/1857157/pexels-photo-1857157.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+        <div class="container-fluid" style="background-color: rgb(24, 24, 24);">
+            <a class="navbar-brand" href="#"  style="color: white;">PLAN NOW</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                
+               
+            </div>
+        </div>
+        </nav>
+        
+        <div class="container" my-5 style="background-color: rgba(247, 247, 247, 0.63);">
+          <h3> FILL THE FORM </h3>
+
+                <form   action = "/form", method = "POST" class="row g-3" name = 'Pdetails'>
+               
+                <div class="col-12">
+                    <label for="inputName" class="form-label">Name of the birthday person</label>
+                    <input type="text" class="form-control" name="name" id="inputName">
+                </div>
+                <div class="col-12">
+                    <label for="inputtheme" class="form-label">Choose the theme</label>
+                    <select id="inputtheme" class="form-select" name="theme" >
+                    <option selected>  </option>
+                    <option>SAFARI THEME</option>
+                    <option>RAINBOW THEME</option>
+                    
+                    </select>
+                </div>
+                <div class="col-md-6">
+                    <label for="inputPhone Number" class="form-label">Phone Number</label>
+                    <input type="text" class="form-control" name="PhoneNo" id="inputPhone Number">
+                </div>
+                <div class="col-md-4">
+                    <label for="inputsex" class="form-label">gender</label>
+                    <select id="inputsex" class="form-select" name="sex" >
+                    <option selected>  </option>
+                    <option>Female</option>
+                    <option>Male</option>
+                    <option>Others</option>
+                    </select>
+                </div>
+                <div class="col-md-2">
+                    <label for="inputAge" class="form-label">Age</label>
+                    <input type="number" class="form-control" name="Age" id="inputAge">
+                </div>
+                <div class="col-md-4">
+                    <label for="inputfood" class="form-label">Food Type</label>
+                    <select id="inputfood" class="form-select" name="food" >
+                    <option selected>  </option>
+                    <option>Veg</option>
+                    <option>Non-Veg</option>
+                    </select>
+                <div>
+                    <div class="col-md-12">
+                        <label for="inputguestno" class="form-label">Number of Guests</label>
+                        <select id="inputguestno" class="form-select" name="guestno" >
+                        <option selected>  </option>
+                        <option>50-60</option>
+                        <option>70-80</option>
+                        <option>80-100</option>
+                        </select>
+                    <div>
+                    <div class="col-md-15">
+                        <label for="inputlocation" class="form-label">Event Location</label>
+                        <input type="text" class="form-control" name="location" id="inputlocation">
+                    </div>
+                    <div class="col-md-8">
+                        <label for="inputdate" class="form-label">Event Date</label>
+                        <input type="date" class="form-control" name="date" id="inputdate">
+                    </div>
+                    <div class="col-md-8">
+                        <label for="inputstime" class="form-label">Start time</label>
+                        <input type="time" class="form-control" name="stime" id="inputstime">
+                    </div>
+                        <div class="col-md-8">
+                        <label for="inputetime" class="form-label">End time</label>
+                        <input type="time" class="form-control" name="etime" id="inputetime">
+                    </div>
+                    <div>
+                        
+                        <div class="col-md-15">
+                            <label for="inputreq" class="form-label">Any Special requirements?</label>
+                            <input type="text" class="form-control" name="req" id="inputreq">
+                        </div>
+                <input style="margin: 40px 0px;" class="btn btn-primary" type="submit" value="Submit" >
+                <input style="margin: 40px 0px;" class="btn btn-secondary" type="button" value="NEXT"  onclick="window.location.href='/receipt'">
+                </div>
+
+</div>
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two!  
+    print(rows)
+       except Error as e:
+            print(e)
+        
+    return render_template('wform.html')
+    
+    
+    -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
